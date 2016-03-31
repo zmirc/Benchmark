@@ -113,13 +113,14 @@ require_download IOPing $IOPING_DIR https://github.com/zmirc/Benchmark/raw/maste
 require_download UnixBench $UNIX_BENCH_DIR https://github.com/zmirc/Benchmark/raw/master/UnixBench$UNIX_BENCH_VERSION-patched.tgz
 mv -f UnixBench $UNIX_BENCH_DIR 2>/dev/null
 
+# http://linux.die.net/man/1/fio
 cat > $FIO_DIR/reads.ini << EOF
 [global]
 randrepeat=1
 ioengine=libaio
-bs=4k
-ba=4k
-size=1G
+bs=64k
+ba=64k
+size=10G
 direct=1
 gtod_reduce=1
 norandommap
@@ -136,9 +137,9 @@ cat > $FIO_DIR/writes.ini << EOF
 [global]
 randrepeat=1
 ioengine=libaio
-bs=4k
-ba=4k
-size=1G
+bs=64k
+ba=64k
+size=10G
 direct=1
 gtod_reduce=1
 norandommap
@@ -224,7 +225,7 @@ cd ..
 
 echo "Running UnixBench benchmark..."
 cd $UNIX_BENCH_DIR
-./Run -c 1 -c `grep -c processor /proc/cpuinfo` >> ../sb-output.log 2>&1
+# ./Run -c 1 -c `grep -c processor /proc/cpuinfo` >> ../sb-output.log 2>&1
 cd ..
 
 # RESPONSE=\`curl -s -F "upload[upload_type]=unix-bench-output" -F "upload[data]=<sb-output.log" -F "upload[key]=$EMAIL|$HOST|$PLAN|$COST" -F "private=$PRIVATE" $UPLOAD_ENDPOINT\`
