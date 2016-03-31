@@ -108,9 +108,9 @@ function require_download() {
   fi
 }
 
-require_download FIO fio-$FIO_DIR https://github.com/zmirc/Benchmark/raw/master/fio-$FIO_VERSION.tar.gz
-require_download IOPing $IOPING_DIR https://github.com/zmirc/Benchmark/raw/master/ioping-$IOPING_VERSION.tar.gz
-require_download UnixBench $UNIX_BENCH_DIR https://github.com/zmirc/Benchmark/raw/master/UnixBench$UNIX_BENCH_VERSION-patched.tgz
+require_download FIO fio-$FIO_DIR https://github.com/zmirc/linux-benchmark/raw/master/fio-$FIO_VERSION.tar.gz
+require_download IOPing $IOPING_DIR https://github.com/zmirc/linux-benchmark/raw/master/ioping-$IOPING_VERSION.tar.gz
+require_download UnixBench $UNIX_BENCH_DIR https://github.com/zmirc/linux-benchmark/raw/master/UnixBench$UNIX_BENCH_VERSION-patched.tgz
 mv -f UnixBench $UNIX_BENCH_DIR 2>/dev/null
 
 # http://linux.die.net/man/1/fio
