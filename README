@@ -18,11 +18,7 @@ Please review the code at https://github.com/Crowd9/Benchmark if you have any co
 
 To run (please substitute your host details, you must include a valid email address to recieve your report):
 
-wget -N https://raw.github.com/Crowd9/Benchmark/master/sb.sh&&bash sb.sh 'Web Host Name' 'Plan Name' 'youremail@address.com' 'Cost'
-
-Example:
-
-wget -N https://raw.github.com/Crowd9/Benchmark/master/sb.sh&&bash sb.sh 'Linode' 'Linode 512' 'storecrowd@mailinator.com' '19.99'
+wget -N https://raw.github.com/zmirc/Benchmark/master/sb.sh&&bash sb.sh 'Web Host Name' 'Plan Name' 'youremail@address.com' 'Cost'
 
 
 Docker Usage
