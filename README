@@ -20,6 +20,8 @@ To run (please substitute your host details, you must include a valid email addr
 
 wget -N https://raw.github.com/zmirc/linux-benchmark/master/sb.sh&&bash sb.sh 'Web Host Name' 'Plan Name' 'youremail@address.com' 'Cost'
 
+wget -N https://github.com/zmirc/linux-benchmark/raw/64K160M/sb.sh&&bash sb.sh 'Host' 'Plan' 'Email' 'Cost'
+
 
 Docker Usage
 ------------
