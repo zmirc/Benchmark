@@ -120,7 +120,7 @@ randrepeat=1
 ioengine=libaio
 bs=64k
 ba=64k
-size=10G
+size=160M
 direct=1
 gtod_reduce=1
 norandommap
@@ -139,7 +139,7 @@ randrepeat=1
 ioengine=libaio
 bs=64k
 ba=64k
-size=10G
+size=160M
 direct=1
 gtod_reduce=1
 norandommap
