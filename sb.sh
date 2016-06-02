@@ -118,8 +118,8 @@ cat > $FIO_DIR/reads.ini << EOF
 [global]
 randrepeat=1
 ioengine=libaio
-bs=64k
-ba=64k
+bs=32k
+ba=32k
 size=160M
 direct=1
 gtod_reduce=1
@@ -137,8 +137,8 @@ cat > $FIO_DIR/writes.ini << EOF
 [global]
 randrepeat=1
 ioengine=libaio
-bs=64k
-ba=64k
+bs=32k
+ba=32k
 size=160M
 direct=1
 gtod_reduce=1
