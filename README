@@ -22,6 +22,8 @@ wget -N https://raw.github.com/zmirc/linux-benchmark/master/sb.sh&&bash sb.sh 'W
 
 wget -N https://github.com/zmirc/linux-benchmark/raw/64K160M/sb.sh&&bash sb.sh 'Host' 'Plan' 'Email' 'Cost'
 
+wget -N https://github.com/zmirc/linux-benchmark/raw/32K160M/sb.sh&&bash sb.sh 'Host' 'Plan' 'Email' 'Cost'
+
 
 Docker Usage
 ------------
